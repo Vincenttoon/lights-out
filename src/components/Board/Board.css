@@ -15,3 +15,14 @@ button {
     border: none;
     margin: var(--size);
 }
+
+.won {
+    columns: white;
+    font-size: calc(2*var(--size));
+    letter-spacing: 2px;
+    padding: 0 var(--size);
+    text-shadow :
+        0 0 calc(1*var(--size)) white,
+        0 0 calc(2*var(--size)) white,
+        0 0 calc(4*var(--size)) white;
+}
