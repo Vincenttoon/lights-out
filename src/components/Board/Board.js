@@ -16,7 +16,11 @@ const Board = () => {
         const [board, setBoard] = useState(createGrid())
 
         const toggleLights = (row, col) => {
-            console.log(row, col);
+            const copy = [...board.map(r => [...r])]
+
+            copy[row][col] = !copy[row][col]
+
+            setBoard(copy)
         }
 
         return (
@@ -25,9 +29,11 @@ const Board = () => {
                     <div className="row" key={rowIndex}>
                         {row.map((cell, colIndex) => (
                             <Cell
+                            key={`${rowIndex}-${colIndex}`}
                             toggleLights={toggleLights} 
                             isOn = {board[rowIndex][colIndex]}
-                            rowIndex={rowIndex} colIndex={colIndex} />
+                            rowIndex={rowIndex} 
+                            colIndex={colIndex} />
                         ))}
                     </div>
                 )}
