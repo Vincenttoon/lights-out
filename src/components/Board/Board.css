@@ -1,0 +1,17 @@
+.Board {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 
+        0 0 calc(.1*var(--size)) #000,
+        0 0 calc(.5*var(--size)) #fff;
+        padding: 2px;
+}
+
+button {
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50px;
+    border: none;
+    margin: var(--size);
+}
