@@ -1,5 +1,6 @@
 import { useState } from "react"
 import '../Board/Board.css'
+import Cell from "../Cell/Cell"
 
 const Board = () => {
 
@@ -14,14 +15,19 @@ const Board = () => {
 
         const [board, setBoard] = useState(createGrid())
 
-        console.log(board);
+        const toggleLights = (row, col) => {
+            console.log(row, col);
+        }
 
         return (
             <div className="Board">
                 {board.map((row, rowIndex) => 
                     <div className="row" key={rowIndex}>
                         {row.map((cell, colIndex) => (
-                            
+                            <Cell
+                            toggleLights={toggleLights} 
+                            isOn = {board[rowIndex][colIndex]}
+                            rowIndex={rowIndex} colIndex={colIndex} />
                         ))}
                     </div>
                 )}
