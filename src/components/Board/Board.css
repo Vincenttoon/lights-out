@@ -1,28 +1,29 @@
 .Board {
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    box-shadow: 
-        0 0 calc(.1*var(--size)) #000,
-        0 0 calc(.5*var(--size)) #fff;
-        padding: 2px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 0 calc(0.1 * min(100vw, 100vh)) #000,
+    0 0 calc(0.5 * min(100vw, 100vh)) #fff;
+  padding: 5px; /* Adjust this value to set the desired padding */
+}
+
+.row {
+  display: flex;
+  justify-content: center;
 }
 
 button {
-    width: var(--size);
-    height: var(--size);
-    border-radius: 50px;
-    border: none;
-    margin: var(--size);
+  width: calc(20vw);
+  height: calc(20vw);
+  border-radius: 50px;
+  border: none;
+  margin: 2px;
 }
 
 .won {
-    columns: white;
-    font-size: calc(2*var(--size));
-    letter-spacing: 2px;
-    padding: 0 var(--size);
-    text-shadow :
-        0 0 calc(1*var(--size)) white,
-        0 0 calc(2*var(--size)) white,
-        0 0 calc(4*var(--size)) white;
+  color: white;
+  font-size: calc(10vw);
+  letter-spacing: 2px;
+  padding: 0 10px;
+  text-shadow: 0 0 calc(5vw) white, 0 0 calc(10vw) white, 0 0 calc(20vw) white;
 }
