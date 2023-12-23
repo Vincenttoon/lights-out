@@ -28,10 +28,10 @@ By: [Vincent Toon](https://github.com/Vincenttoon)
 
 ## Rules
 
-1. Board opens fully lit. 
+1. Board opens randomly lit. 
 2. User must touch the cells to turn on/off the lights. 
 3. Each cell touches the four (up, down, left, right) cells around it.
-4. Play until board is fully dark.
+4. Play until board is fully dark (or for now, down to one lit piece).
 5. Celebrate victory!
 
 ## Future Improvements
