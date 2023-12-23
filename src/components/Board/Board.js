@@ -3,12 +3,24 @@ import "../Board/Board.css";
 import Cell from "../Cell/Cell";
 
 const Board = ({ size }) => {
-  const createGrid = () =>
-    new Array(size)
-      .fill()
-      .map((r) => new Array(size).fill().map((c) => Math.random() < 0.4));
+  const createWinningBoard = () => {
+    const board = new Array(size).fill().map(() => new Array(size).fill(false));
 
-  const [board, setBoard] = useState(createGrid());
+    // Logic to create a solvable board configuration
+    // Implement your algorithm here to create a winning board
+
+    // For demonstration purposes, setting the entire board to true (all lights on)
+    // Replace this logic with the algorithm to generate a winning board
+    for (let i = 0; i < size; i++) {
+      for (let j = 0; j < size; j++) {
+        board[i][j] = true;
+      }
+    }
+
+    return board;
+  };
+
+  const [board, setBoard] = useState(createWinningBoard());
 
   const toggleLights = (row, col) => {
     const copy = [...board.map((r) => [...r])];
