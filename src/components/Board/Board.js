@@ -3,12 +3,24 @@ import "../Board/Board.css";
 import Cell from "../Cell/Cell";
 
 const Board = ({ size }) => {
-  const createGrid = () =>
-    new Array(size)
-      .fill()
-      .map((r) => new Array(size).fill().map((c) => Math.random() < 0.4));
+  const createWinningBoard = () => {
+    const board = new Array(size).fill().map(() => new Array(size).fill(false));
 
-  const [board, setBoard] = useState(createGrid());
+    // Logic to create a solvable board configuration
+    // Implement your algorithm here to create a winning board
+
+    // For demonstration purposes, setting the entire board to true (all lights on)
+    // Replace this logic with the algorithm to generate a winning board
+    for (let i = 0; i < size; i++) {
+      for (let j = 0; j < size; j++) {
+        board[i][j] = true;
+      }
+    }
+
+    return board;
+  };
+
+  const [board, setBoard] = useState(createWinningBoard());
 
   const toggleLights = (row, col) => {
     const copy = [...board.map((r) => [...r])];
@@ -22,19 +34,22 @@ const Board = ({ size }) => {
     setBoard(copy);
   };
 
-  const countLitCells = () => {
-    let count = 0;
-    for (let i = 0; i < board.length; i++) {
-      for (let j = 0; j < board[i].length; j++) {
+  const gameEnds = () => {
+    let litCount = 0;
+
+    for (let i = 0; i < size; i++) {
+      for (let j = 0; j < size; j++) {
         if (board[i][j]) {
-          count++;
+          litCount++;
+          if (litCount > 1) {
+            return false; // More than one cell is still lit, so the game doesn't end
+          }
         }
       }
     }
-    return count;
+
+    return true; // One or zero cells are lit, so the game ends
   };
-  
-  const gameEnds = () => countLitCells() <= 1;
 
   return (
     <div className="Board">

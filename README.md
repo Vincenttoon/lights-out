@@ -28,17 +28,18 @@ By: [Vincent Toon](https://github.com/Vincenttoon)
 
 ## Rules
 
-1. Board opens randomly lit. 
+1. Board opens fully lit. 
 2. User must touch the cells to turn on/off the lights. 
 3. Each cell touches the four (up, down, left, right) cells around it.
-4. Play until board is fully dark (or for now, down to one lit piece).
+4. Play until board is completely dark (or for now, down to one lit piece).
 5. Celebrate victory!
 
 ## Future Improvements
 
+- Create randomly generated board for that will always succeed and leave board fully dark. "Dancing Links" algorithm suggested in research.
 - Light and dark mode for users.
 - Option for users to choose board size.
-- Create randomly generated board for that will always succeed. "Dancing Links" algorithm suggested in research.
+
 
 ## Questions?
 
