@@ -1,9 +1,46 @@
-#Bugs to fix
+# lights-out
 
-- Make responsive
-- Fix so you can always win:
-    - "For future improvements you could change the way you populate your board, since doing it randomly doesn't guarantee it will always be solvable (mathematically speaking). Instead you could populate it with only "false" and then generate random clicks, that way you can safely say every new board is solvable."
+![lights out](./src/assets/lights-out.jpg)
 
-##improvements
- - change board size for per phone screen?
- - Light and dark mode
+## License
+### [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+### [MIT](https://opensource.org/licenses/MIT)
+
+## Description
+
+5x5 classic "Lights Out" game created with React and Css. I built this to refresh and expand my knowledge of React and Javascript.
+
+By: [Vincent Toon](https://github.com/Vincenttoon)
+
+## Table of Contents
+
+* [Live Deployment](#live-deployment)
+
+* [Rules](#rules)
+
+* [Future Improvements](#future-improvements)
+
+* [Questions?](#questions)
+
+## Live Deployment
+
+- [Lights Out Live Deployment](https://toons-lights-out.vercel.app/)
+
+## Rules
+
+1. Board opens fully lit. 
+2. User must touch the cells to turn on/off the lights. 
+3. Each cell touches the four (up, down, left, right) cells around it.
+4. Play until board is fully dark.
+5. Celebrate victory!
+
+## Future Improvements
+
+- Light and dark mode for users.
+- Option for users to choose board size.
+- Create randomly generated board for that will always succeed. "Dancing Links" algorithm suggested in research.
+
+## Questions?
+
+Questions, comments, or concerns? Please Email me at:
+* vincenttoon22@gmail.com
