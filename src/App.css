@@ -1,12 +1,13 @@
 :root {
   --size: 25px;
-  --blue : #12e7e7;
-  --orange : #fea501;
+  --blue: #d66adb;
+  --orange: #6edb6a;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat&family=Sail&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat&family=Sail&display=swap");
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -14,10 +15,10 @@ html, body {
 }
 
 .App {
-  font-family: 'Monoton', cursive;
+  font-family: "Monoton", cursive;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: calc(2*var(--size));
+  padding-top: calc(2 * var(--size));
 }
