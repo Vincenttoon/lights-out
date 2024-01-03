@@ -2,8 +2,8 @@ import '../Title/Title.css';
 
 const Title = () =>
     <div className="title">
-        <span className="orange">LIGHTS </span>
-        <span className="blue">OUT</span>
+        <span className="orange">ONE </span>
+        <span className="blue">LIGHT</span>
     </div>
 
 export default Title;

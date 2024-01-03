@@ -1,6 +1,5 @@
-# lights-out
-
-![lights out](./src/assets/lights-out.jpg)
+# One Light
+![One Light](./src/assets/lights-out.jpg)
 
 ## License
 ### [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
