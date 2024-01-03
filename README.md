@@ -23,7 +23,7 @@ By: [Vincent Toon](https://github.com/Vincenttoon)
 
 ## Live Deployment
 
-- [Lights Out Live Deployment](https://toons-lights-out.vercel.app/)
+- [One Light Live Deployment](https://one-light-vwtd.vercel.app/)
 
 ## Rules
 
